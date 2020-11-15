@@ -12,8 +12,37 @@ namespace AutoMergePDF
             m_Document = document;
         }
 
+        /// <summary>
+        /// Generates the merged documents
+        /// </summary>
         public void CreateMergedDocument()
         {
+            // Guard clauses
+            if(string.IsNullOrEmpty(m_Document.OutputPath))
+            {
+                throw new System.Exception("Exception 1: Output path was null or empty"); 
+            }
+
+            if(string.IsNullOrEmpty(m_Document.PDF1Path))
+            {
+                throw new System.Exception("Exception 2: Document 1 input path was null or empty"); 
+            }
+
+            if(string.IsNullOrEmpty(m_Document.PDF2Path))
+            {
+                throw new System.Exception("Exception 3: Document 2 input path was null or empty"); 
+            }
+
+            if(!System.IO.File.Exists(m_Document.PDF1Path))
+            {
+                throw new System.Exception("Exception 4: Input file number 1 does not exist at the location provided"); 
+            }
+
+            if (!System.IO.File.Exists(m_Document.PDF2Path))
+            {
+                throw new System.Exception("Exception 5: Input file number 2 does not exist at the location provided");
+            }
+
             // Create initial document that will contain all of the merged documents
             PdfDocument document = new PdfDocument(new PdfWriter(m_Document.OutputPath));
 
