@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <Authors>Joshua H. Santiago</Authors>
     <Company>Molecule Software</Company>
     <Product>AutoMergePDF</Product>
