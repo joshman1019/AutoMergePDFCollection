@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <Version>1.1.0</Version>
+    <Authors>Joshua H. Santiago</Authors>
+    <Company>Molecule Software</Company>
+    <Product>AutoMergePDF</Product>
+    <Description>A library that can simply combine two PDF documents into one, or combine a list of PDF documents into one</Description>
+    <Copyright>Developer claims no copyright</Copyright>
+    <PackageTags>PDF Merge Molecule Software Merger</PackageTags>
+    <PackageReleaseNotes>Added the ability to merge a list of PDF documents, now not just limited to two</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
